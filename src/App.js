@@ -18,7 +18,7 @@ const App = () => {
     <StyledApp path="/">
       <Nav />
       <Router>
-        <Home path="/home" />
+        <Home path="home" />
         <Feed path="feed" />
         <Profile path="profile" />
       </Router>
