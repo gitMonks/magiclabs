@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Link } from '@reach/router';
 import styled from 'styled-components';
+import Nav from './components/nav';
 import Feed from './components/feed';
+import Home from './components/home';
+import Profile from './components/profile';
 
 const StyledApp = styled.div`
   background-color: #f5f5f5;
@@ -11,8 +15,13 @@ const StyledApp = styled.div`
 
 const App = () => {
   return (
-    <StyledApp>
-      <Feed />
+    <StyledApp path="/">
+      <Nav />
+      <Router>
+        <Home path="/home" />
+        <Feed path="feed" />
+        <Profile path="profile" />
+      </Router>
     </StyledApp>
   );
 };
