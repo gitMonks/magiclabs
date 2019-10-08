@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from '@reach/router';
 import styled from 'styled-components';
 
-const StyledNav = styled.div`
+const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
